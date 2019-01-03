@@ -1,0 +1,252 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #fff;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/** Header **/
+
+.header-bg {
+	background: url(../images/header-bg.jpg) no-repeat 50% 0;
+	max-width: 1900px;
+	min-height: 750px;
+	margin: auto;
+}
+.header {
+	display:flex;
+	flex-direction: column;	
+}
+.header-nav {
+	min-height:100px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15);
+}
+.menu {
+	display:flex;
+	list-style: none;
+}
+.menu li {
+	margin-right:58px;
+}
+.menu li:last-child {
+	margin-right:0;
+}
+.menu li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.65);
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+.menu li a:hover {
+	color:#fff;
+}
+.header-info {
+	max-width: 970px;
+	margin:auto;
+	text-align: center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.header-title {
+	font-size: 65px;
+	font-family: "Open Sans";
+	color: rgb(255, 255, 255);
+	line-height: 71px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 144px;
+}
+.header-text {
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	line-height: 33px;
+	margin-top: 26px;
+}
+
+.header-button {
+	width: 200px;
+	height: 47px;
+	background: #e84545;
+	border-radius: 3px;
+	margin-top: 72px;
+	text-decoration: none;
+	line-height: 47px;
+	color:#fff;
+	font-weight: 600;
+	transition: 0.4s;
+}
+.header-button:hover {
+	background: rgba(232, 69, 69, 0.8);
+}
+
+.content {
+	display:flex;
+}
+.features {
+	display:flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 120px;
+}
+.features-block {
+	min-height: 200px;
+	width: 300px;
+	margin-bottom: 60px;
+}
+.features-block h3 {
+	font-size: 14px;
+	color: rgb(45, 48, 51);
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 26px;
+}
+.features-block p {
+	font-size: 14px;
+	color: rgb(108, 114, 121);
+	line-height: 21px;
+	margin-top: 20px;
+}
+.features-block .fico {
+	background: url(../images/sprites.png) no-repeat;
+	display: inline-block;	
+	height:60px;
+}
+.features-block:nth-of-type(1) .fico {	
+	width:60px;
+	background-position: -6px -9px;
+}
+.features-block:nth-of-type(2) .fico {	
+	width:73px;
+	background-position: -75px -9px;
+}
+.features-block:nth-of-type(3) .fico {	
+	width:43px;
+	background-position: -13px -74px;
+}
+.features-block:nth-of-type(4) .fico {	
+	width:56px;
+	background-position: -166px -10px;
+}
+.features-block:nth-of-type(5) .fico {	
+	width:72px;
+	background-position: -75px -74px;
+}
+.features-block:nth-of-type(6) .fico {	
+	width:79px;
+	background-position: -154px -74px;
+}
+
+
+/** Gallery **/
+
+
+.gallery {
+	max-width: 1900px;	
+	margin:0 auto;
+	margin-top: 52px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.gallery-photo {
+	width: 25%;
+	max-height: 350px;
+	overflow: hidden;
+	box-shadow: -2px 0px 0px 0px rgba(255,255,255,1), 
+					0 -2px 0 0px rgba(255,255,255,1);
+}
+.gallery-photo img {
+	max-width: 100%;
+    max-height: 350px;
+    vertical-align: top;
+}
+
+/** Footer **/
+
+.footer {
+	max-width: 1900px;
+	margin:0 auto;
+	text-align: center;
+	background: #3a3e64;
+}
+.footer-info {
+	border-top: 1px solid #fff;
+	min-height: 250px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer-copy span {
+	color:#fff;
+}
+.footer-block {
+	width: 370px;
+	margin-top: 66px;
+}
+.fb-title {
+	font-size: 14px;
+	font-weight: 700;
+	color:#fff;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+.footer-block p {
+	font-size: 14px;
+	line-height: 22.5px;
+	color:rgba(255, 255, 255, 0.5);
+}
+.footer-block .fb-ico {
+	background: url(../images/sprites.png) no-repeat 50% 0;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 5px;
+}
+.footer-block .fb-ico:last-child {
+	margin: 0;
+}
+.footer-block .fb-ico.facebook {
+	background-position: -242px -94px;
+}
+.footer-block .fb-ico.twitter {
+	background-position: -242px -48px;
+}
+.footer-block .fb-ico.linkedin {
+	background-position: -242px -2px;
+}
+.footer-copy {
+	background: #313454;
+	min-height: 94px;
+	font-size: 14px;
+	line-height: 22.5px;
+	color:#808080;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-copy a {
+	color:#fff;
+	text-decoration: none;
+}
+.footer-copy a:hover {
+	color:rgba(255, 255, 255, 0.8);
+}
