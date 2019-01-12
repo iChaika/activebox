@@ -18,6 +18,7 @@ body {
 
 .header-bg {
 	background: url(../images/header-bg.jpg) no-repeat 50% 0;
+	background-size: cover;
 	max-width: 1900px;
 	min-height: 750px;
 	margin: auto;
@@ -26,16 +27,17 @@ body {
 	display:flex;
 	flex-direction: column;	
 }
-.header-nav {
-	min-height:100px;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15);
+.header-main {
+	min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15);
 }
 .menu {
 	display:flex;
+	flex-wrap: wrap;
 	list-style: none;
 }
 .menu li {
@@ -55,6 +57,18 @@ body {
 .menu li a:hover {
 	color:#fff;
 }
+
+.menu-responsive {
+	display: none;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.menu-responsive-close {
+	display: none;
+}
+
 .header-info {
 	max-width: 970px;
 	margin:auto;
@@ -83,9 +97,9 @@ body {
 .header-button {
 	width: 200px;
 	height: 47px;
+	margin-top: 72px;
 	background: #e84545;
 	border-radius: 3px;
-	margin-top: 72px;
 	text-decoration: none;
 	line-height: 47px;
 	color:#fff;
@@ -166,6 +180,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .gallery-photo {
 	width: 25%;
@@ -192,6 +207,7 @@ body {
 	border-top: 1px solid #fff;
 	min-height: 250px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
